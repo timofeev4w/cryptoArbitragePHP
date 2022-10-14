@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\CryptologyController;
+use App\Http\Controllers\CryptologyPriceController;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        $results = CryptologyController::cryptologyApi();
+        $results = CryptologyPriceController::cryptologyApi();
         // $pairs = ['BTC_USDT',
         // 'BNB_USDT',
         // 'BCH_USDT',
